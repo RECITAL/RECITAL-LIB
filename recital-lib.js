@@ -185,3 +185,11 @@ Date.prototype.Format = function(fmt) {
     }
 
 })(window, document);
+
+function isArray(input) {
+    return Object.prototype.toString.call(input) === '[object Array]';
+}
+
+function isDate(input) {
+    return input instanceof Date || Object.prototype.toString.call(input) === '[object Date]';
+}
